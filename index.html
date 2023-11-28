@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee&display=swap">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="print.css" media="print">
+    <!-- <link rel="stylesheet" href="print.css" media="print"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc1ffc8683.js" crossorigin="anonymous"></script>
     <title>Riverside Art Center</title>
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -20,19 +26,20 @@
                 <h1>Riverside Art Center</h1>
                 <p>Let your creativity flow</p>
             </div>
-            <nav>
-                <ul>
+            <nav class="nav-menu">
+                <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="#events">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="https://www.riversideartcentershop.com">Merchandise</a></li>
                 </ul>
+                <button class="hamburger-menu">&#9776;</button>
             </nav>
         </div>
     </header>
 
-    
+
     <section class="hero">
         <div class="container">
             <h1>Welcome to Riverside Art Center</h1>
@@ -40,15 +47,16 @@
             <img src="images/header-image.jpg" alt="Art Exhibition">
         </div>
     </section>
-    
+
     <section class="content">
         <div class="container">
             <h2>About Us</h2>
-            <p>We are a vibrant art center dedicated to promoting creativity and art in our community. Join us in exploring the world of art through exhibitions, classes, and events.</p>
+            <p>We are a vibrant art center dedicated to promoting creativity and art in our community. Join us in
+                exploring the world of art through exhibitions, classes, and events.</p>
             <img src="images/about-image.jpg" alt="About Us Image">
         </div>
     </section>
-    
+
     <section class="events" id="events">
         <div class="container">
             <h2>Upcoming Events</h2>
@@ -71,7 +79,11 @@
         <div class="container">
             <div class="contact-column">
                 <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.695107283988!2d-84.19642872788172!3d40.57040977506094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883ef9ebb5b12281%3A0xb4a307f9975208a1!2sRiverside%20Art%20Center!5e0!3m2!1sen!2sus!4v1698723298602!5m2!1sen!2sus" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.695107283988!2d-84.19642872788172!3d40.57040977506094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883ef9ebb5b12281%3A0xb4a307f9975208a1!2sRiverside%20Art%20Center!5e0!3m2!1sen!2sus!4v1698723298602!5m2!1sen!2sus"
+                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
             <div class="contact-column">
                 <div class="contact-info">
@@ -97,15 +109,27 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <footer>
         <div class="container">
-            <p>&copy; 2023 Class Group 8<br>Created for Final Project<br><a href="https://www.riversideartcenter.org" target="_blank">Original Website</a></p>
+            <p>&copy; 2023 Class Group 8<br>Created for Final Project<br><a href="https://www.riversideartcenter.org"
+                    target="_blank">Original Website</a></p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            menuBtn.addEventListener('click', function () {
+                navMenu.classList.toggle('show-menu');
+            });
+        });
+
+    </script>
+
 
 </body>
+
 </html>
-
-
