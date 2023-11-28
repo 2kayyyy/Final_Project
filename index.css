@@ -181,13 +181,7 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* Footer styles */
-footer {
-    background-color: #7da3d1;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
+
 /* Contact section styles */
 .contact {
     background-color: #f4f4f4;
@@ -249,5 +243,67 @@ footer {
     .contact-column {
         flex: 1 1 100%; /* Stack columns on top of each other */
         margin-bottom: 20px;
+    }
+}
+/* Footer styles */
+/* Footer styles */
+footer {
+    background-color: #7da3d1;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    float: left; /* Align the menu to the left side */
+}
+
+.footer-menu ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-menu ul li a:hover {
+    color: #FFD700;
+}
+
+.footer-info {
+    float: right; /* Align the paragraph to the right side */
+}
+
+.footer-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-info a:hover {
+    color: #FFD700;
+}
+
+/* Media query for footer */
+@media (max-width: 768px) {
+    .footer-menu ul {
+        float: none; /* Remove float for responsiveness */
+        text-align: center; /* Center align for mobile view */
+    }
+
+    .footer-info {
+        float: none; /* Remove float for responsiveness */
+        text-align: center; /* Center align for mobile view */
+        margin-top: 20px; /* Add margin for spacing */
     }
 }
