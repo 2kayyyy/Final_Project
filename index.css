@@ -3,6 +3,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.nav-menu .icon {
+    display: none;
+}
+
 body {
     background-color: #cfe8e8;
     margin: 0;
@@ -39,13 +43,11 @@ header {
 
 /* New styles for responsive design */
 @media screen and (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
+    .nav-menu .icon {
+        display: block; /* Show the hamburger menu icon */
     }
-
-    .nav-menu {
-        display: none;
-        /* Other styles */
+    .nav-menu ul {
+        display: none; /* Hide the navigation links initially on small screens */
     }
 
     .menu {

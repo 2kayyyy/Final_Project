@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const menu = document.querySelector('.menu');
+    const menuBtn = document.querySelector('.nav-menu .icon');
+    const navLinks = document.querySelector('.nav-menu ul');
 
-    hamburgerMenu.addEventListener('click', function () {
-        menu.classList.toggle('show-menu');
+    menuBtn.addEventListener('click', function () {
+        navLinks.classList.toggle('show-menu');
     });
 });
+
+console.log('Menu button:', menuBtn);
+console.log('Nav links:', navLinks);
