@@ -46,14 +46,14 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
-  background-color: #FF9FDB;
+  background-color: #88A2CE;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .btnBuyNow:hover {
-  background-color: #FF75B3;
+  background-color: #88A2CE;
 }
 
 /* Social Media Icons */
@@ -71,7 +71,7 @@ body {
 }
 
 .mediaIcons a:hover {
-  color: #FF9FDB;
+  color: #88A2CE;
 }
 
 /* Product Section Styles */
@@ -112,14 +112,14 @@ body {
   padding: 8px 16px;
   border: none;
   border-radius: 5px;
-  background-color: #FF9FDB;
+  background-color: #88A2CE;
   color: #fff;
   text-decoration: none;
   transition: background-color 0.3s;
 }
 
 .productBox a:hover {
-  background-color: #FF75B3;
+  background-color: #88A2CE;
 }
 
 /* About Company Section Styles */
@@ -184,14 +184,14 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #FF9FDB;
+  background-color: #88A2CE;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .btnSend:hover {
-  background-color: #FF75B3;
+  background-color: #88A2CE
 }
 
 /* Footer Section Styles */
