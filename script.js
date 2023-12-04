@@ -1,11 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.querySelector('.nav-menu .icon');
-    const navLinks = document.querySelector('.nav-menu ul');
-
-    menuBtn.addEventListener('click', function () {
-        navLinks.classList.toggle('show-menu');
+window.onload = function () {
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector("header");
+        if (window.pageYOffset > 100) {
+            header.classList.add('is-scrolling');
+        } else {
+            header.classList.remove('is-scrolling');
+        }
     });
-});
 
-console.log('Menu button:', menuBtn);
-console.log('Nav links:', navLinks);
+    const menu_btn = document.querySelector('.hamburger');
+    const mobile_menu = document.querySelector('.mobile-nav');
+
+    menu_btn.addEventListener('click', function () {
+        menu_btn.classList.toggle('is-active');
+        mobile_menu.classList.toggle('is-active');
+    });
+}
