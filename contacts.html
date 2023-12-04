@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navfoot.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-container" id="top">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Riverside Art Center Logo">
+                </a>
+            </div>
+            <div class="header-text">
+                <h1>Riverside Art Center</h1>
+                <p>Let your creativity flow</p>
+            </div>
+            <nav class="nav-menu">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                </ul>  
+            </nav>
+            <button class="hamburger">
+                <div class="bar">
+                </div>
+            </button>
+        </div>
+    </header>
+    <form class="form-contact" id="artGalleryForm">
+        <h2>Art Gallery Submission</h2>
+      
+        <div class="input-contact">
+          <label for="artworkName">Artwork Name</label>
+          <input type="text" id="artworkName" name="artworkName" required>
+        </div>
+      
+        <div class="input-contact">
+          <label for="artistName">Artist Name</label>
+          <input type="text" id="artistName" name="artistName" required>
+        </div>
+      
+        <div class="input-contact">
+          <label for="artType">Art Type</label>
+          <select id="artType" name="artType" required>
+            <option value="" disabled selected>Select Art Type</option>
+            <option value="Painting">Painting</option>
+            <option value="Sculpture">Sculpture</option>
+            <option value="Photography">Photography</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      
+        <div class="input-contact">
+          <label>Medium</label><br>
+          <input type="radio" id="mediumOil" name="medium" value="Oil">
+          <label for="mediumOil">Oil</label>
+      
+          <input type="radio" id="mediumAcrylic" name="medium" value="Acrylic">
+          <label for="mediumAcrylic">Acrylic</label>
+      
+          <input type="radio" id="mediumWatercolor" name="medium" value="Watercolor">
+          <label for="mediumWatercolor">Watercolor</label>
+        </div>
+      
+        <div class="input-contact">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <div class="footer-info">
+                    <p>&copy; 2023 Class Group 8</p>
+                    <p>Created for Final Project</p>
+                    <p><a href="https://www.riversideartcenter.org" target="_blank">Original Website</a></p>
+                </div>
+                <div class="footer-menu">
+                    <a href="#top" class="footer-link">
+                        <img src="images/backtotop.png" alt="topLogo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
