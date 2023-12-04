@@ -96,6 +96,12 @@ header {
         left: 0;
     }
 
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
     .mobile-nav li {
         list-style: none;
     }
