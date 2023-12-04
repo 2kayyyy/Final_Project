@@ -4,7 +4,7 @@
 
 .topnav {
     overflow: hidden;
-    background-color: #88A2CE;
+    margin-bottom: -50px;
   }
   
   .topnav a {
@@ -12,7 +12,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -68,7 +68,7 @@ header {
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +171,7 @@ nav ul li a:hover {
     color: #333;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 1px;
 }
 
 .events ul {
@@ -186,6 +186,20 @@ nav ul li a:hover {
 }
 
 .events img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+.about img {
     max-width: 100%;
     height: auto;
 }
