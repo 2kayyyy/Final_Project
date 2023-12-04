@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="navfoot.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="submit.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="header-container" id="top">
+        <div class="header-container" id="top"></div>
+        <div class="topnav" id="myTopnav">
             <div class="logo">
                 <a href="index.html">
                     <img src="images/logo.png" alt="Riverside Art Center Logo">
@@ -20,21 +22,18 @@
                 <h1>Riverside Art Center</h1>
                 <p>Let your creativity flow</p>
             </div>
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="merchandise.html">Merchandise</a></li>
-                </ul>  
-            </nav>
-            <button class="hamburger">
-                <div class="bar">
-                </div>
-            </button>
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#events">Events</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="submit.html">Submit</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
     </header>
+
     <form class="form-contact" id="artGalleryForm">
         <h2>Art Gallery Submission</h2>
       
@@ -96,6 +95,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>

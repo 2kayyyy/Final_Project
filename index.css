@@ -18,12 +18,10 @@
   }
   
   .topnav a:hover {
-    background-color: grey;
     color: black;
   }
   
   .topnav a.active {
-    background-color: #6a7fa3;
     color: white;
   }
   
@@ -54,11 +52,6 @@
       text-align: left;
     }
   }
-  
-
-.hamburger, .mobile-nav {
-    display: none;
-}
 
 body {
     background-color: #cfe8e8;
@@ -85,110 +78,6 @@ header {
     margin-bottom: 1px;
 }
 
-@media screen and (max-width: 768px) {
-
-    .hamburger {
-        position: relative;
-        display: block;
-        width: 55px;
-        cursor: pointer;
-        appearance: none;
-        background: none;
-        outline: none;
-        border: none;
-    }
-
-    .hamburger .bar, .hamburger:after, .hamburger:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 5px;
-        background-color: #FFF;
-        margin: 6px 0px;
-        transition: 0.4s;
-    }
-
-    .mobile-nav {
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        min-height: 100vh;
-        display: block;
-        z-index: 98;
-        background-color: #90b4d1;
-        padding-top: 100px;
-        transition: 0.4s;
-    }
-
-    .hamburger.is-active {
-        width: 55px;
-        cursor: pointer;
-        background: none;
-        border: none;
-        outline: none;
-        margin-right: 10px;
-    }
-
-    .mobile-nav.is-active {
-        left: 0;
-    }
-
-    .mobile-nav ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .mobile-nav li {
-        list-style: none;
-    }
-
-    .mobile-nav a {
-        display: block;
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto 10px;
-        text-align: center;
-        padding: 12px 16px;
-        background-color: #EBFAF9;
-        color: #77855C;
-        text-decoration: none;
-    }
-
-    .mobile-nav a:hover {
-        background-color: white;
-    }
-
-    .button {
-        appearance: none;
-        border: none;
-        outline: none;
-        background: none;
-        display: inline-block;
-        color: #FFF;
-        font-size: 20px;
-        background-color: #FF9FDB;
-        padding: 12px 16px;
-        border-radius: 8px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        cursor: pointer;
-    }
-
-    .cross {
-        height: 20px;
-        width: 20px;
-    }
-
-    @media (max-width: 767px) {
-        .button {
-            font-size: 18px;
-        }
-    }
-}
 
 .logo img {
     max-width: 200px;

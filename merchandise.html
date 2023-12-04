@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navfoot.css">
     <link rel="stylesheet" href="merchandise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Riverside Merchandise</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
@@ -13,7 +14,8 @@
 </head>
 <body>
     <header>
-        <div class="header-container" id="top">
+        <div class="header-container" id="top"></div>
+        <div class="topnav" id="myTopnav">
             <div class="logo">
                 <a href="index.html">
                     <img src="images/logo.png" alt="Riverside Art Center Logo">
@@ -23,31 +25,17 @@
                 <h1>Riverside Art Center</h1>
                 <p>Let your creativity flow</p>
             </div>
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
-                    <li><a href="merchandise.html">Merchandise</a></li>
-                </ul>  
-            </nav>
-            <button class="hamburger">
-                <div class="bar">
-                </div>
-            </button>
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#events">Events</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="submit.html">Submit</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
     </header>
-
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="merchandise.html">Merchandise</a></li>
-        </ul>
-    </nav> 
 
     <div class="container">
         
