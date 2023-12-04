@@ -1,0 +1,93 @@
+body {
+    background-color: #cfe8e8;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.7); /* Adjust the alpha (last value) to control transparency */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow for the form */
+    backdrop-filter: blur(10px); /* Blurry effect for the container */
+  }
+  
+  .form-contact {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .form-contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-contact {
+    margin-bottom: 15px;
+  }
+  
+  .input-contact label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-contact input[type="text"],
+  .input-contact textarea,
+  .input-contact select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    box-shadow: inset 6px 6px 12px #c0c0c0, inset -6px -6px 12px #ffffff;
+    outline: none;
+  }
+  
+  .input-contact input[type="radio"] {
+    display: none;
+  }
+  
+  /* Custom radio button style */
+  .input-contact input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .input-contact input[type="radio"] + label:before {
+    content: '\1F518'; /* Emoji: 🔘 */
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  
+  .input-contact input[type="radio"]:checked + label:before {
+    content: '\1F534'; /* Emoji: 🔴 */
+  }
+  
+  .input-contact textarea {
+    resize: none;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
