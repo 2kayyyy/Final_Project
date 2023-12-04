@@ -193,34 +193,7 @@ body {
 .btnSend:hover {
   background-color: #88A2CE
 }
-
-/* Footer Section Styles */
-.footerSection {
-  background-color: #7da3d1;
-  color: #fff;
+.newsletter {
   text-align: center;
-  padding: 20px 0;
-}
-
-.footerSection #footerContanier {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footerSection h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-.footerSection p {
-  margin: 8px 0;
-  font-size: 16px;
-}
-
-.footerSection img {
-  width: 40px;
-  height: auto;
-  margin: 0 5px;
+  margin-bottom: 40px;
 }
