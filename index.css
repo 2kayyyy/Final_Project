@@ -32,9 +32,6 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-menu ul {
-        display: none;
-    }
 
     .hamburger {
         position: relative;
@@ -55,18 +52,6 @@ header {
         background-color: #FFF;
         margin: 6px 0px;
         transition: 0.4s;
-    }
-
-    .hamburger.is-active:before {
-        transform: rotate(-45deg) translate(-8px, 6px);
-    }
-
-    .hamburger.is-active:after {
-        transform: rotate(45deg) translate(-9px, -8px);
-    }
-
-    .hamburger.is-active .bar {
-        opacity: 0;
     }
 
     .mobile-nav {
@@ -137,6 +122,11 @@ header {
         text-transform: uppercase;
         font-weight: 700;
         cursor: pointer;
+    }
+
+    .cross {
+        height: 20px;
+        width: 20px;
     }
 
     @media (max-width: 767px) {
