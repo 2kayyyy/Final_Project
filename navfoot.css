@@ -30,30 +30,42 @@
   .topnav .icon {
     display: none;
   }
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-      
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .topnav.responsive a {
-      
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
     }
-  }
+    .topnav.responsive a:nth-last-child(2) {
+        display: block;
+        padding: 14px 14px;
+        color: #fff;
+        background-color: #90b4d1;
+        transition: color 0.3s;
+    }
+
+    .topnav.responsive a:nth-last-child(2):hover {
+        color: black;
+    }
+}
+
 
 body {
     background-color: #c7e9e9;
@@ -74,7 +86,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Adding position relative to the header container */
+    position: relative;
 }
 
 .header-text h1 {
@@ -86,8 +98,8 @@ header {
     max-width: 200px;
     height: auto;
     margin-right: 10px;
-    position: relative; /* Adding position relative to the image */
-    top: -30px; /* Adjust this value to move the image up or down */
+    position: relative;
+    top: -30px;
 }
 
 .logo h1 {
@@ -125,21 +137,28 @@ nav ul li a:hover {
     padding: 40px 20px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+    text-align: center;
 }
 
 .contact .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .contact-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
     flex: 1 1 300px;
     margin: 20px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+    box-shadow: 5px 5px 10px #d9d9d99f, -5px -5px 10px #ffffff;
     background-color: #fff;
+    position: relative;
 }
 
 .contact-column:last-child {
@@ -166,6 +185,23 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+.contact-info ul li:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.social-media-icons .icon {
+    width: 20px;
+    height: auto;
+    margin: 0 10px;
+}
+
 .hours h3 {
     font-size: 20px;
     margin-bottom: 15px;
@@ -178,10 +214,10 @@ nav ul li a:hover {
     }
 }
 
-
 .hours p {
     margin: 8px 0;
 }
+
 
 /*Footer-Section*/
 
@@ -212,9 +248,6 @@ footer {
 }
 
 .footer-menu img {
-    width: 30px; /* Set the width to your desired size */
-    height: auto; /* Maintain aspect ratio */
+    width: 30px;
+    height: auto;
 }
-
-
-
